@@ -1,14 +1,17 @@
 import Vue from 'vue'
 import VueRouter, { RouteConfig } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import MixinLearn from '../views/mixin-learn/index.vue'
 
 Vue.use(VueRouter)
 
 const routes: Array<RouteConfig> = [
   {
-    path: '/',
+    path: '/mixin-learn',
     name: 'home',
-    component: HomeView
+    meta: {
+      routeName: 'mixin学习',
+    },
+    component: MixinLearn
   },
   {
     path: '/about',
